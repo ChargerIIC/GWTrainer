@@ -1,0 +1,16 @@
+<!-- Generated template for the CardViewComponent component -->
+<ion-content>
+    <ion-card>
+      <ion-card-title>
+        {{this.card.question}}
+      </ion-card-title>
+    </ion-card>
+
+<ion-card *ngFor='let answer of this.card.answers' click="answerSelected(this.card.answers.indexOf(answer)+1)">
+  <ion-card-header>{{this.card.answers.indexOf(answer)+1}}</ion-card-header>
+  <ion-card-content>
+    {{answer}}
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
