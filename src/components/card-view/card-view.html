@@ -6,7 +6,7 @@
       </ion-card-title>
     </ion-card>
 
-<ion-card *ngFor='let answer of this.card.answers' click="answerSelected(this.card.answers.indexOf(answer)+1)">
+<ion-card *ngFor='let answer of this.card.answers' (click)="this.answerSelected(this.card.answers.indexOf(answer))">
   <ion-card-header>{{this.card.answers.indexOf(answer)+1}}</ion-card-header>
   <ion-card-content>
     {{answer}}

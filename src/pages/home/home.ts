@@ -18,6 +18,7 @@ export class HomePage {
     this.cards = new Array<Card>();
     var card = new Card();
     card.id = 0;
+    card.correctAnswer = 0;
     card.type = CardType.MultipleChoice;
     card.question = "What is required for a model to be declared a Warlord?"
     card.answers.push("Model must be a character");

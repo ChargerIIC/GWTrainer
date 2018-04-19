@@ -5,6 +5,7 @@ export class Card{
     id: number;
     public question: string;
     type: CardType;
+    correctAnswer: number;//index of correct answer
 
     //If Multiple Choice
     answers: string[];

@@ -21,6 +21,12 @@ export class CardViewComponent {
 
   //called when user answers a question
   answerSelected(index: number){
-
+    console.log("answer: " + index);
+    if(index == this.card.correctAnswer){
+      console.log("Success");
+    }
+    else{
+      console.log("Nope");
+    }
   }
 }
