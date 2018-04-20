@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Card } from '../../model/Card.model';
 import { CardType } from '../../model/CardType.enum';
+import { Vibration } from '@ionic-native/vibration';
 
 @Component({
   selector: 'page-home',
@@ -13,7 +14,7 @@ export class HomePage {
   selectedIndex: number;
   cards: Card[];
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private vibMotor: Vibration) {
 
     //TODO: Create an actual repo
     this.cards = new Array<Card>();
@@ -42,6 +43,7 @@ export class HomePage {
   }
 
   onQuestionAnswer($event : boolean){
+    this.vibMotor.vibrate(0); //stop any current motor work
     if($event){
       if(this.selectedIndex >= this.cards.length-1){
         this.selectedIndex = 0;
@@ -56,6 +58,7 @@ export class HomePage {
     }
     else{
       console.log("Fail");
+      this.vibMotor.vibrate(500); //.5 second
     }
   }
 }
