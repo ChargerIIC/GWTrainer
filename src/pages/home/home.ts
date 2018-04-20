@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Card } from '../../model/Card.model';
 import { CardType } from '../../model/CardType.enum';
-import { INTERNAL_BROWSER_PLATFORM_PROVIDERS } from '@angular/platform-browser';
 
 @Component({
   selector: 'page-home',
