@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Card } from '../../model/Card.model';
 import { CardType } from '../../model/CardType.enum';
+import { INTERNAL_BROWSER_PLATFORM_PROVIDERS } from '@angular/platform-browser';
 
 @Component({
   selector: 'page-home',
@@ -10,6 +11,7 @@ import { CardType } from '../../model/CardType.enum';
 export class HomePage {
 
   selectedCard: Card;
+  selectedIndex: number;
   cards: Card[];
 
   constructor(public navCtrl: NavController) {
@@ -26,7 +28,35 @@ export class HomePage {
     card.answers.push("Model must be at least 2 inches tall");
     this.cards.push(card);
 
+    card = new Card();
+    card.id = 1;
+    card.correctAnswer = 1;
+    card.type = CardType.MultipleChoice;
+    card.question = "When does a defending unit fire Overwatch?"
+    card.answers.push("After a Charge movement is completed");
+    card.answers.push("When a Charge is declared");
+    card.answers.push("After the charge attack completes");
+    this.cards.push(card);
+
     this.selectedCard = this.cards[0]; //TODO Randomize - Consider deck shuffle?
+    this.selectedIndex = 0;
   }
 
+  onQuestionAnswer($event : boolean){
+    if($event){
+      if(this.selectedIndex >= this.cards.length-1){
+        this.selectedIndex = 0;
+        console.log
+      }
+      else{
+        this.selectedIndex++;
+      }
+    console.log("Success " + this.selectedIndex);
+
+      this.selectedCard = this.cards[this.selectedIndex];
+    }
+    else{
+      console.log("Fail");
+    }
+  }
 }

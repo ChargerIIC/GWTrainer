@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { Card } from '../../model/Card.model';
 
 /**
@@ -14,7 +14,7 @@ import { Card } from '../../model/Card.model';
 export class CardViewComponent {
 
   @Input() card: Card;
-
+  @Output() questionResult: EventEmitter<boolean> = new EventEmitter<boolean>();
   
   constructor() {
   }
@@ -23,10 +23,10 @@ export class CardViewComponent {
   answerSelected(index: number){
     console.log("answer: " + index);
     if(index == this.card.correctAnswer){
-      console.log("Success");
+      this.questionResult.emit(true);
     }
     else{
-      console.log("Nope");
+      this.questionResult.emit(false);
     }
   }
 }
