@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentsModule } from '../components/components.module';
 
 import { Vibration } from '@ionic-native/vibration';
+import { FlashCardRepoProvider } from '../providers/flash-card-repo/flash-card-repo';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { Vibration } from '@ionic-native/vibration';
     StatusBar,
     SplashScreen,
     Vibration,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FlashCardRepoProvider
   ]
 })
 export class AppModule {}
