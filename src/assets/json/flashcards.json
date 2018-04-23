@@ -143,6 +143,72 @@
     "4 times"
   ],
   "correctAnswer": 0
+},
+{
+  "id": 13,
+  "question": "If you use the dice re-roll strategem on a charge roll (2d6), how many dice must be rolled?",
+  "type": "MultipleChoice",
+  "answers": [
+    "1 dice",
+    "Both dice",
+    "Your Choice"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 14,
+  "question": "How close must a model be to a transport in order to embark within it?",
+  "type": "MultipleChoice",
+  "answers": [
+    "1 inch",
+    "3 inches",
+    "6 inches"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 15,
+  "question": "Under what circumstances will a sudden death victory be acheived?",
+  "type": "MultipleChoice",
+  "answers": [
+    "There are no enemy models on the board",
+    "All the enemy's models are slain",
+    "There are no enemy models on the board that do not have the Fly or Fortification rule"
+  ],
+  "correctAnswer": 2
+},
+{
+  "id": 16,
+  "question": "What models cannot scale ruins?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Vehicles, Monsters, Calvary, and Bikers that cannot Fly",
+    "Vehicles, Monsters, Calvary, and Bikers",
+    "Vehicles and Monsters"
+  ],
+  "correctAnswer": 0
+},
+{
+  "id": 17,
+  "question": "How close must a model be to a barricade to gain the benefits of cover?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Within 2 inches",
+    "Within 1 inch",
+    "Touching the base of the barricade"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 18,
+  "question": "When determining the 'nearest' model, how to resolve an effect if two models are equidistant?",
+  "type": "MultipleChoice",
+  "answers": [
+    "The decision by the player owning the effect",
+    "The decision by the player owning the target models",
+    "By the roll of a die"
+  ],
+  "correctAnswer": 0
 }
 
 
