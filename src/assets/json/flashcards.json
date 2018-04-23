@@ -209,7 +209,62 @@
     "By the roll of a die"
   ],
   "correctAnswer": 0
+},
+{
+  "id": 19,
+  "question": " If one of my units shoots an enemy unit in which only one model is visible, and I resolve the attacks one at a time, slaying that model before I have resolved all of my unit’s attacks, what happens to the rest of the attacks – are they wasted?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 20,
+  "question": "Can a unit fire Overwatch at a Character if, when it declares its charge at them, there are other visible enemy models that are closer?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 0
+},
+{
+  "id": 21,
+  "question": "When does a vehicle gain the benefits of cover?",
+  "type": "MultipleChoice",
+  "answers": [
+    "The model must be within or on terrain and more than 50% obscured",
+    "The model must be within or on terrain",
+    "The model must be more than 50% obscured"
+  ],
+  "correctAnswer": 0
+},
+{
+  "id": 22,
+  "question": "When does infantry gain the benefits of cover?",
+  "type": "MultipleChoice",
+  "answers": [
+    "The model must be within or on terrain and more than 50% obscured",
+    "The model must be within or on terrain",
+    "The model must be more than 50% obscured"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 23,
+  "question": "If two opposing units within the same piece of obscuring terrain dire at each other with pistols, do they gain cover?",
+  "type": "MultipleChoice",
+  "answers": [
+    "No, if they are within an inch of each other",
+    "Yes",
+    "No, no matter the distance"
+  ],
+  "correctAnswer": 1
 }
+
+
 
 
 
