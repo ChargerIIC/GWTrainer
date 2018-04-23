@@ -16,7 +16,20 @@ export class CardViewComponent {
   @Input() card: Card;
   @Output() questionResult: EventEmitter<boolean> = new EventEmitter<boolean>();
   
+  letterArray : Array<string> = ["a","b","c","d","e","f"];
+
   constructor() {
+  }
+
+  getLetter(num : number): string{
+    //TODO find out if the array is the best method
+    if(num <= 6)
+    {
+      return this.letterArray[num] + " )";
+    }
+    else{
+      return "x )";
+    }
   }
 
   //called when user answers a question
