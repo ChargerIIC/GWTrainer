@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentsModule } from '../components/components.module';
 
+import { HttpModule} from '@angular/http';
+
 import { Vibration } from '@ionic-native/vibration';
 import { FlashCardRepoProvider } from '../providers/flash-card-repo/flash-card-repo';
 
@@ -24,6 +26,7 @@ import { FlashCardRepoProvider } from '../providers/flash-card-repo/flash-card-r
     TabsPage,
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     ComponentsModule,
     IonicModule.forRoot(MyApp)

@@ -17,10 +17,9 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private vibMotor: Vibration, private flashCardProvider: FlashCardRepoProvider) {
 
-    //TODO: Create an actual repo
+    this.selectedCard = new Card();
     this.flashCardRepo = flashCardProvider;
-
-    this.selectedCard = this.flashCardRepo.getCardByIndex(0);
+    this.flashCardRepo.loadCards().subscribe(o => this.selectedCard = this.flashCardRepo.getRandomCard());
   }
 
   onQuestionAnswer($event : boolean){

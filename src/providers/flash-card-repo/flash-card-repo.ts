@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Card } from '../../model/Card.model';
 import { CardType } from '../../model/CardType.enum';
+import {Http, Response} from '@angular/http';
+import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/catch';
+import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the FlashCardRepoProvider provider.
@@ -13,54 +17,39 @@ export class FlashCardRepoProvider {
 
   cards: Card[];
 
-  constructor() {
+  constructor(public http:Http) {
     this.cards = new Array<Card>();
-    var idx = 0;
+  }
 
-    var card = new Card();
-    card.id = idx;
-    card.correctAnswer = 0;
-    card.type = CardType.MultipleChoice;
-    card.question = "What is required for a model to be declared a Warlord?"
-    card.answers.push("Model must be a character");
-    card.answers.push("Model must be an infantry model");
-    card.answers.push("Model must be at least 2 inches tall");
-    this.cards.push(card);
-    idx++;
 
-    card = new Card();
-    card.id = idx;
-    card.correctAnswer = 1;
-    card.type = CardType.MultipleChoice;
-    card.question = "When does a defending unit fire Overwatch?"
-    card.answers.push("After a Charge movement is completed");
-    card.answers.push("When a Charge is declared");
-    card.answers.push("After the charge attack completes");
-    this.cards.push(card);
-    idx++;
 
-    card = new Card();
-    card.id = idx;
-    card.correctAnswer = 1;
-    card.type = CardType.MultipleChoice;
-    card.question = "What is the maximum distance in which a charge can be declared?"
-    card.answers.push("Within 18 inches");
-    card.answers.push("Within 12 inches");
-    card.answers.push("Within the unit's max charge distance");
-    this.cards.push(card);
-    idx++;
+  loadCards(){
+    return this.http.get("./assets/json/flashcards.json").map(res =>{
+      var data = res.json();
+      data.forEach(je => {
+        var card = new Card();
+        card.id = je.id;
+        card.question = je.question;
+        card.type = je.type;
+        card.answers = je.answers;
+        card.correctAnswer = je.correctAnswer;
+        this.cards.push(card);
+      });
+    })
 
-    card = new Card();
-    card.id = idx;
-    card.correctAnswer = 1;
-    card.type = CardType.MultipleChoice;
-    card.question = "What is the Warp Charge value of Smite?"
-    card.answers.push("5");
-    card.answers.push("5 + 1 for each previous instance of Smite cast during the current phase");
-    card.answers.push("5 + 1 for each previous instance of Smite cast during the game");
-    this.cards.push(card);
-    idx++;
+  }
 
+  private handleError(error: Response | any) {
+    let errMsg: string;
+    if (error instanceof Response) {
+      const body = error.json() || '';
+      const err = body.error || JSON.stringify(body);
+      errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
+    } else {
+      errMsg = error.message ? error.message : error.toString();
+    }
+    console.error(errMsg);
+    return Observable.throw(errMsg);
   }
 
   getRandomCard() : Card{

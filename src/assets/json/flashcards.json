@@ -1,0 +1,46 @@
+[
+{
+  "id": 0,
+  "question": "What is required for a model to be declared a Warlord?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Model must be a character",
+    "Model must be an infantry model",
+    "Model must be at least 2 inches tall"
+  ],
+  "correctAnswer": 0
+},
+{
+  "id": 1,
+  "question": "When does a defending unit fire Overwatch?",
+  "type": "MultipleChoice",
+  "answers": [
+    "After a Charge movement is completed",
+    "When a Charge is declared",
+    "After the charge attack completes"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 1,
+  "question": "What is the maximum distance in which a charge can be declared?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Within 18 inches",
+    "Within 12 inches",
+    "Within the unit's max charge distance"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 1,
+  "question": "What is the Warp Charge value of Smite?",
+  "type": "MultipleChoice",
+  "answers": [
+    "5",
+    "5 + 1 for each previous instance of Smite cast during the current phase",
+    "5 + 1 for each previous instance of Smite cast during the game"
+  ],
+  "correctAnswer": 1
+}
+]
