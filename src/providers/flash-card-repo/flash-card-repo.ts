@@ -20,8 +20,6 @@ export class FlashCardRepoProvider {
     this.cards = new Array<Card>();
   }
 
-
-
   loadCards(){
     return this.http.get("./assets/json/flashcards.json").map(res =>{
       var data = res.json();
@@ -36,19 +34,6 @@ export class FlashCardRepoProvider {
       });
     })
 
-  }
-
-  private handleError(error: Response | any) {
-    let errMsg: string;
-    if (error instanceof Response) {
-      const body = error.json() || '';
-      const err = body.error || JSON.stringify(body);
-      errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
-    } else {
-      errMsg = error.message ? error.message : error.toString();
-    }
-    console.error(errMsg);
-    return Observable.throw(errMsg);
   }
 
   getRandomCard() : Card{
