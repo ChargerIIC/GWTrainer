@@ -13,19 +13,17 @@ export class HomePage {
 
   selectedCard: Card;
   selectedIndex: number;
-  flashCardRepo: FlashCardRepoProvider;
 
   constructor(public navCtrl: NavController, private vibMotor: Vibration, private flashCardProvider: FlashCardRepoProvider) {
 
     this.selectedCard = new Card();
-    this.flashCardRepo = flashCardProvider;
-    this.flashCardRepo.loadCards().subscribe(o => this.selectedCard = this.flashCardRepo.getRandomCard());
+    this.flashCardProvider.loadCards().subscribe(o => this.selectedCard = flashCardProvider.getRandomCard());
   }
 
   onQuestionAnswer($event : boolean){
     this.vibMotor.vibrate(0); //stop any current motor work
     if($event){
-      this.selectedCard = this.flashCardRepo.getRandomCard();
+      this.selectedCard = this.flashCardProvider.getRandomCard();
     }
     else{
       console.log("Fail");
