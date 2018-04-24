@@ -11,7 +11,7 @@ import { FlashCardRepoProvider } from '../../providers/flash-card-repo/flash-car
 export class HomePage {
 
   selectedCard: Card;
-  selectedIndex: number;
+  score: number = 0;
 
   constructor(public navCtrl: NavController, private vibMotor: Vibration, private flashCardProvider: FlashCardRepoProvider) {
 
@@ -22,10 +22,11 @@ export class HomePage {
   onQuestionAnswer($event : boolean){
     this.vibMotor.vibrate(0); //stop any current motor work
     if($event){
+      this.score++;
       this.selectedCard = this.flashCardProvider.getRandomCard();
     }
     else{
-      console.log("Fail");
+      this.score--;
       this.vibMotor.vibrate(500); //.5 second
     }
   }
