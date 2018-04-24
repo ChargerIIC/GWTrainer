@@ -446,7 +446,7 @@
   "correctAnswer": 1
 },
 {
-  "id": 40,
+  "id": 41,
   "question": "How do you measure distances to an objective marker?",
   "type": "MultipleChoice",
   "answers": [
@@ -455,5 +455,15 @@
     "By the shortest distance possible"
   ],
   "correctAnswer": 2
+},
+{
+  "id": 42,
+  "question": "For the purposes of the Sudden Death rule, do units that are embarked within transports with the Flyer Battlefield Role count as being on the battlefield?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 1
 }
 ]
