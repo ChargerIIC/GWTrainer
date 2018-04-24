@@ -254,7 +254,7 @@
 },
 {
   "id": 23,
-  "question": "If two opposing units within the same piece of obscuring terrain dire at each other with pistols, do they gain cover?",
+  "question": "If two opposing units within the same piece of obscuring terrain fire at each other with pistols, do they gain cover?",
   "type": "MultipleChoice",
   "answers": [
     "No, if they are within an inch of each other",
