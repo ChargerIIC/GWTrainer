@@ -412,6 +412,48 @@
     "No"
   ],
   "correctAnswer": 0
+},
+{
+  "id": 38,
+  "question": "If a model has two chainswords, how many additional attacks can it make?",
+  "type": "MultipleChoice",
+  "answers": [
+    "One",
+    "Two",
+    "Three"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 39,
+  "question": "If an ability allows me to add 1 to saving throws, does it apply to both normal saving throws and invulnerable throws?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 0
+},
+{
+  "id": 40,
+  "question": "What is the default range of Deny the Witch?",
+  "type": "MultipleChoice",
+  "answers": [
+    "24 inches",
+    "20 inches",
+    "18 inches"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 40,
+  "question": "How do you measure distances to an objective marker?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Horizontally",
+    "Vertically",
+    "By the shortest distance possible"
+  ],
+  "correctAnswer": 2
 }
-
 ]
