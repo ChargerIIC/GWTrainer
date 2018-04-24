@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Card } from '../../model/Card.model';
-import { CardType } from '../../model/CardType.enum';
 import {Http, Response} from '@angular/http';
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch';
