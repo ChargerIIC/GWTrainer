@@ -370,5 +370,48 @@
     "Only within the player's own deployment zone"
   ],
   "correctAnswer": 0
+},
+{
+  "id": 34,
+  "question": "If a model has a leadership of 6, a +1 leadership modifier and the ability to use a Leadership 8 model's leadership as their own. What is the final leadership value?",
+  "type": "MultipleChoice",
+  "answers": [
+    "7",
+    "8",
+    "9"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 35,
+  "question": "If I use an ability to deploy more than 9 inches from reserve, what is the minium charge distance I need to roll to suceed?",
+  "type": "MultipleChoice",
+  "answers": [
+    "8",
+    "9",
+    "10"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 36,
+  "question": "If I have an ability that triggers on a toHit roll and use a weapon that automaticlly hits, can I make the hit rolls to see if I trigger the effects?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 37,
+  "question": "If a unit is given the ability to fight again, can it pile in and consolidate?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 0
 }
+
 ]
