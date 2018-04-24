@@ -8,4 +8,34 @@
 
 <ion-content padding>
 
-</ion-content>
+  <ion-card>
+    <ion-card-title>
+        <ion-item>
+          <strong>Author:</strong>
+      </ion-item>    
+    </ion-card-title>
+    <ion-card-content>
+      <ion-item>
+        <ion-avatar><img src={{this.avatarUri}}/></ion-avatar><span>Vernon Burt - ChargerIIC</span>
+      </ion-item>
+      <ion-item><span>Repos: {{this.repos}}</span></ion-item>        
+      <ion-item><span>Member Since: {{this.memberSince}}</span></ion-item>
+      <ion-item><span>Followers: {{this.followers}} Following: {{this.following}}</span></ion-item>
+        <br>        
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-title>
+          <ion-item>
+            <strong>Project:</strong>
+        </ion-item>    
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>GW Trainer</ion-item>
+      </ion-card-content>
+    </ion-card>
+    <!-- <strong>Project</strong>
+<div class="github-card" data-github="ChargerIIC/GWTrainer" data-width="400" data-height="" data-theme="default"></div>
+</ion-content> -->
+<!-- <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script> -->
