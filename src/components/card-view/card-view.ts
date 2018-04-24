@@ -1,4 +1,5 @@
 import { Component, Input, EventEmitter, Output } from '@angular/core';
+import { ToastController } from 'ionic-angular';
 import { Card } from '../../model/Card.model';
 
 /**
@@ -18,7 +19,8 @@ export class CardViewComponent {
   
   letterArray : Array<string> = ["a","b","c","d","e","f"];
 
-  constructor() {
+  constructor(private toastCtrlr: ToastController) {
+
   }
 
   getLetter(num : number): string{
@@ -36,9 +38,22 @@ export class CardViewComponent {
   answerSelected(index: number){
     console.log("answer: " + index);
     if(index == this.card.correctAnswer){
+      let toast = this.toastCtrlr.create({
+        message: "Success! The Emperor Protects!",
+        duration: 500,
+        position: "bottom",
+      });  
+      toast.present();
       this.questionResult.emit(true);
+      
     }
     else{
+      let toast = this.toastCtrlr.create({
+        message: "Failure! That's Heresy.",
+        duration: 500,
+        position: "bottom",
+      });
+      toast.present();
       this.questionResult.emit(false);
     }
   }
