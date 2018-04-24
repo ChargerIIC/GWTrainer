@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Card } from '../../model/Card.model';
-import { CardType } from '../../model/CardType.enum';
 import { Vibration } from '@ionic-native/vibration';
 import { FlashCardRepoProvider } from '../../providers/flash-card-repo/flash-card-repo';
 
