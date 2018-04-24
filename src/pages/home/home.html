@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar color="primary">
     <ion-title>Quiz {{selectedCard.id}}</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <card-view [card]='selectedCard' (questionResult)='onQuestionAnswer($event)'></card-view>
+<ion-content >
+  <card-view [card]='selectedCard' (questionResult)='onQuestionAnswer($event)' ></card-view>
 </ion-content>
