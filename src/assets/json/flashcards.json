@@ -262,7 +262,108 @@
     "No, no matter the distance"
   ],
   "correctAnswer": 1
+},
+{
+  "id": 24,
+  "question": "What happens when a unit that has advanced is given the ability to move again?",
+  "type": "MultipleChoice",
+  "answers": [
+    "It moves under it's normal move characteristic",
+    "It moves with the value of the precious advance movement",
+    "The player rolls d6 and adds it's value to the model's move characteristic"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 25,
+  "question": "If a player sets up a unit on the battlefield as reinforcements at the end of the Movement phase, can the player then use any Stratagems that are used ‘during your Movement phase’?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 26,
+  "question": "Does a model that is removed from the battlefield and set up again retain any persistent effects?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 27,
+  "question": "When is a unit considered to have made a charge?",
+  "type": "MultipleChoice",
+  "answers": [
+    "When a charge is declared",
+    "When a charge move is declared",
+    "When a charge move is succesfully completed"
+  ],
+  "correctAnswer": 2
+},
+{
+  "id": 28,
+  "question": "When does a player need to pay reinforcement points for an ability?",
+  "type": "MultipleChoice",
+  "answers": [
+    "If the ability generates new models",
+    "If the ability raises an existing unit's size above it's orginal size",
+    "If the ability generates new units"
+  ],
+  "correctAnswer": 2
+},
+{
+  "id": 29,
+  "question": "What movement actions can be performed by a unit deployed from reserves?",
+  "type": "MultipleChoice",
+  "answers": [
+    "The unit can Move, Advance, or Charge",
+    "The unit can only Charge",
+    "The unit can't Move, Advance, or Charge"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 30,
+  "question": "How many dedicated transport units can a player deploy?",
+  "type": "MultipleChoice",
+  "answers": [
+    "1 transport per non-transport unit",
+    "1 transport per troop choice",
+    "3 transports per datasheet"
+  ],
+  "correctAnswer": 0
+},
+{
+  "id": 31,
+  "question": "If a unit is set up inside a transport on the table, how do they count for the purposes of the Tactical Reserves rule?",
+  "type": "MultipleChoice",
+  "answers": [
+    "The unit counts as being in reserves",
+    "The unit counts as being on the table",
+    "The unit does not count at all for the purposes of the Tactical Reserves rule"
+  ],
+  "correctAnswer": 1
+},
+{
+  "id": 32,
+  "question": "If a transport moves, does the unit inside also counta s having moved?",
+  "type": "MultipleChoice",
+  "answers": [
+    "Yes",
+    "No",
+    "Only if it disembarks"
+  ],
+  "correctAnswer": 0
 }
+
+
+
+
 
 
 
