@@ -362,7 +362,7 @@
 },
 {
   "id": 33,
-  "question": "One turn two, where can a model deploy from reserves?",
+  "question": "On turn two, where can a model deploy from reserves?",
   "type": "MultipleChoice",
   "answers": [
     "Anywhere at least 9 inches from an enemy model",
@@ -443,7 +443,7 @@
     "20 inches",
     "18 inches"
   ],
-  "correctAnswer": 1
+  "correctAnswer": 0
 },
 {
   "id": 41,
