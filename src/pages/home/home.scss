@@ -6,6 +6,10 @@ page-home {
   background-repeat: no-repeat;
 }
 
+ion-card{
+  opacity: .9;
+}
+
 //TODO: Classic Shake effect. Storing here for future use with the ion-content
 .shake {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
