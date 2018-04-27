@@ -1,5 +1,11 @@
 page-home {
 
+  .scroll-content{
+  background: url('../assets/imgs/Imperial_eagle.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 //TODO: Classic Shake effect. Storing here for future use with the ion-content
 .shake {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
