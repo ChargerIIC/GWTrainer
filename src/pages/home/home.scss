@@ -4,6 +4,7 @@ page-home {
   background: url('../assets/imgs/Imperial_eagle.png');
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position:bottom left, bottom right;
 }
 
 ion-card{
@@ -21,7 +22,7 @@ ion-card{
   .pull-right{
     float: right;
   }
-  
+
   @keyframes shake {
     10%, 90% {
       transform: translate3d(-1px, 0, 0);
