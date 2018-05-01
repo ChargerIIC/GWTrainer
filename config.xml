@@ -91,4 +91,5 @@
         <variable name="UPDATE_API" value="https://api.ionicjs.com" />
         <variable name="MAX_STORE" value="2" />
     </plugin>
+    <engine name="browser" spec="~5.0.3" />
 </widget>

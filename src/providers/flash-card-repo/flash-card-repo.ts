@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Card } from '../../model/Card.model';
-import {Http, Response} from '@angular/http';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch';
-import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the FlashCardRepoProvider provider.
